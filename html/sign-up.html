@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/sign-up.css">
+</head>
+<body>
+    <div class="form-container">
+
+        <div class="left-form">
+            <h1>Entre para a nossa comunidade!</h1>
+           <img src="/images/animated-signup.svg" id="form-img">
+        </div>
+
+        <div class="right-form">
+            <h1 class="form-title"> Crie uma conta</h1>
+            <!---->
+            <form>
+
+                <label class="default-label" for="name-input">Nome</label>
+                <div class="input-container">
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                    <input type="text" name="form-reg" class="default-input" id="name-input" required placeholder="Nome"
+                        pattern="[a-zA-ZÀ-ú ]+" title="Por favor, insira um nome válido">
+                </div>
+                
+                <label class="default-label" for="email-input">E-mail</label>
+                <div class="input-container">
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                    <input type="email" name="form-reg" class="default-input"id="email-input" required placeholder="Digite seu e-mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, insira um e-mail válido">
+                </div>
+            
+                <label class="default-label" for="password-input">Senha</label>
+                <div class="input-container">
+                    <i class="fa-sharp fa-solid fa-key"></i>
+                    <input type="password" name="form-reg" class="default-input" id="password-input" required placeholder="Senha"
+                    pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="A senha deve ter pelo menos 8 caracteres, uma letra maiúscula e um número.">
+
+                </div>
+            
+                <label class="default-label" for="phone-number-input">Telefone</label>
+                <div class="input-container">
+                    <input type="tel" name="form-reg" class="default-input" id="phone-number-input" required placeholder="Digite seu telefone"
+                    pattern="^\d{2}\d{5}\d{4}$" title="Por favor, insira um número de telefone válido no formato XX XXXXX-XXXX">
+
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                </div>
+            
+                <label class="default-label" for="born-input">Data de nascimento</label>
+                <div class="input-container">
+                    <input type="date" name="form-reg" class="default-input" id="born-input">
+                </div>
+            
+                <input type="submit" value="Cadastrar" class="default-btn">
+
+                <hr>
+                <p>Você já está registrado no DevFinder?<a> Login</a></p>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
