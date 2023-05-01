@@ -1,4 +1,6 @@
 # DevFinder
+![image](https://user-images.githubusercontent.com/102271783/235398621-40d7743e-1ca0-469d-8e36-c73da663b2ff.png)
+
 Este site tem como objetivo conectar desenvolvedores a empresas em busca de profissionais qualificados. Além disso, os desenvolvedores podem encontrar outros parceiros para trabalhar em projetos em conjunto.
 
 As empresas podem publicar suas vagas e buscar por candidatos que atendam às suas necessidades. Já os desenvolvedores podem criar um perfil, adicionar suas habilidades e buscar por vagas de emprego ou projetos em aberto.
