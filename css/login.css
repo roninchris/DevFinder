@@ -10,7 +10,7 @@
 }
 
 body {
-    background: var(--dark-blue);
+    background: linear-gradient(to right bottom, #2d4059, #2f425b, #30445d, #32475f, #344961, #364b64, #384e67, #3a506a, #3d536e, #3f5672, #425977, #455c7b);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -41,7 +41,6 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-blue);
     margin-right: 4em; 
     width: 600px;
     height: 620px;
