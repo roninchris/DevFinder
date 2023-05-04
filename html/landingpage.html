@@ -11,19 +11,19 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav id="nav-bar">
             <div id="left-nav">
                 <img src="/images/devfinderblue.png" id="logo">
             </div>
 
             <div id="right-nav">
                 <ul id="nav-ul">
-                    <li><a class="nav-anchor" href="">Início</a></li>
-                    <li><a class="nav-anchor"href="">Sobre</a></li>
-                    <li><a class="nav-anchor"href="">Recursos</a></li>
-                    <li><a class="nav-anchor"href="">Contato</a></li>
-                    <li><a class="nav-anchor" id="login-btn" href="/Users/0xjoao/DevFinder/html/sign-up.html" target="http://127.0.0.1:5500/html/sign-up.html">Login</a></li>
-                    <li><a class="nav-anchor" id="signup-btn" href="/Users/0xjoao/DevFinder/html/sign-up.html" t>Cadastre-se</a></li>
+                    <li><a class="nav-anchor" href="#nav-bar">Início</a></li>
+                    <li><a class="nav-anchor"href="#waves-svg">Recursos</a></li>
+                    <li><a class="nav-anchor"href="#about-us-section">Sobre</a></li>
+                    <li><a class="nav-anchor"href="#contact-section">Contato</a></li>
+                    <li><a class="nav-anchor" id="login-btn" href="/html/login.html" >Login</a></li>
+                    <li><a class="nav-anchor" id="signup-btn" href="/html/sign-up.html" >Cadastre-se</a></li>
                 </ul>
             </div>
             
@@ -31,12 +31,15 @@
     </header>
     <main>
 
-        <section class="default-display" id="main-section">
+        <section id="main-section">
 
             <div class="main-left">
                 <h1 class="main-spacing">Conectando <span>Desenvolvedores</span> & <span>Empresas</span>.</h1>
                 <h4 class="subtitle main-spacing">Encontre oportunidades de trabalho, aumente sua rede de contatos e impulsione sua carreira no mundo da tecnologia.</h4>
-                <button class="default-btn main-spacing" id="signup-btn" href="">Cadastre-se</button>
+                <div class="main-btn">
+                    <a href="/html/sign-up.html" rel="nooperner noreferrer"> <button class="developer-btn">Cadastre-se como Desenvolvedor </button> </a>
+                    <a href="/html/sign-up.html" rel="nooperner noreferrer"> <button class="company-btn" >Contratar Desenvolvedor</button> </a>
+               </div>
             </div>
 
             <div class="main-right">
@@ -46,7 +49,8 @@
         <img src="/images/animatedwaves2.gif" id="waves-svg">
 
         <section id="resources-section">
-            <h2>Nossos serviços</h2>
+            <h2>Por que usar a DevFinder?</h2>
+            <hr>
             <div class="resources-container">
 
                 <div class="cards"> 
@@ -94,8 +98,8 @@
                                 <img src="/images/joao-team.png" class="team-img">
                                 <h4>João Victor Ferreira</h4>
                                 <p>Front-end Engineer</p>
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                                <i class="fa-brands fa-github fa-xl"></i>
+                                <a href="" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/joaovictor-ferreira" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
 
                             </div>
         
@@ -103,8 +107,8 @@
                                 <img src="/images/chris-team.png" class="team-img">
                                 <h4>Christiansen Taques</h4>
                                 <p>Back-end Engineer</p>
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                                <i class="fa-brands fa-github fa-xl"></i>
+                                <a href="" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/ItsNotKirito" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
                             </div>
 
                         </div>
@@ -115,16 +119,16 @@
                                 <img src="/images/eduardoteam.png" class="team-img">
                                 <h4>Eduardo Ceve</h4>
                                 <p>DBA</p>
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                                <i class="fa-brands fa-github fa-xl"></i>
+                                <a href="" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/duceve" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
                             </div>
         
                             <div class="team-container">
                                 <img src="/images/junior-team.png" class="team-img">
                                 <h4>Josemir Rederd</h4>
                                 <p>Requirements Engineer</p>
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                                <i class="fa-brands fa-github fa-xl"></i>
+                                <a href="" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/ItsNotJuh" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
                             </div>
                     
                     </div>
