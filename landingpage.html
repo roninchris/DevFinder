@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFinder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/css/landingpage.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <div id="left-nav">
+                <img src="/images/devfinderblue.png" id="logo">
+            </div>
+
+            <div id="right-nav">
+                <ul id="nav-ul">
+                    <li><a class="nav-anchor" href="#nav-bar">Início</a></li>
+                    <li><a class="nav-anchor"href="#waves-svg">Recursos</a></li>
+                    <li><a class="nav-anchor"href="#about-us-section">Sobre</a></li>
+                    <li><a class="nav-anchor"href="#contact-section">Contato</a></li>
+                    <li><a class="nav-anchor" id="login-btn" href="localhost:3000/login" >Login</a></li>
+                    <li><a class="nav-anchor" id="signup-btn" href="localhost:3000/login" >Cadastre-se</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+
+        <section id="main-section">
+
+            <div class="main-left">
+                <h1 class="main-spacing">Conectando <span>Desenvolvedores</span> & <span>Empresas</span>.</h1>
+                <h4 class="subtitle main-spacing">Encontre oportunidades de trabalho, aumente sua rede de contatos e impulsione sua carreira no mundo da tecnologia.</h4>
+                <div class="main-btn">
+                    <a href="/html/sign-up.html" rel="nooperner noreferrer"> <button class="developer-btn">Cadastre-se como Desenvolvedor </button> </a>
+                    <a href="/html/sign-up.html" rel="nooperner noreferrer"> <button class="company-btn" >Contratar Desenvolvedor</button> </a>
+               </div>
+            </div>
+
+            <div class="main-right">
+                <img src="/images/svganimation.svg" id="animation" > 
+            </div>
+        </section>
+        <img src="/images/animatedwaves2.gif" id="waves-svg">
+
+        <section id="resources-section">
+            <h2>Por que usar a DevFinder?</h2>
+            <hr>
+            <div class="resources-container">
+
+                <div class="cards"> 
+                    <img src="/images/users.png" alt="three users silhouette" class="resources-img">
+                    <h3>Networking</h3>
+                    <p>Conectamos desenvolvedores, tech recruiters e empresas, aumentando suas chances de encontrar oportunidades de trabalho e parcerias.</p>
+                </div>
+
+                <div class="cards">
+                    <img src="/images/job.png" alt="user getting a job" class="resources-img">
+                    <h3>Oportunidades de Carreira</h3>
+                    <p>Com a DevFinder, você pode publicar seu perfil profissional e ser encontrado por empresas em busca de talentos como você.</p>
+                </div>
+
+                <div class="cards">
+                    <img src="/images/company.png" alt="company grow" class="resources-img">
+                    <h3>Soluções para Empresas</h3>
+                    <p>Nossa plataforma permite que empresas publiquem suas vagas e encontrem desenvolvedores com as habilidades e experiências que precisam.</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="vacancy-section">
+
+            <h3>Não perca tempo</h3>
+            <h2>Crie sua conta e candidate-se às vagas</h2>
+            <div class="vacancy-container">
+
+                <div class="vacancy-card">
+                    <h3>Desenvolvedor(a) Front-End Sênior</h3>
+                    <div class="vacancy-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Curitiba, PR</p>
+                    </div>
+                    <div class="vacancy-salary">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <p>R$ 15.000,00 (PJ)</p>
+                    </div>
+                    <div class="vacancy-btn">
+                        <button class="vancancy-skills">Html</button>
+                        <button class="vancancy-skills">Css</button>
+                    </div>
+                    <div class="vacancy-btn">
+                        <button class="vancancy-skills">Javascript</button>
+                        <button class="vancancy-skills">React</button>
+                    </div>
+
+                    <a href="">
+                        <p class="vacancy-show">Visualizar vaga</p>
+                    </a>
+                
+                </div>
+
+                <div class="vacancy-card">
+                    <h3>DBA Pleno</h3>
+                    <div class="vacancy-location"> 
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Remoto</p>
+                    </div>
+                    <div class="vacancy-salary">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <p>R$ 9300,00(CLT)</p>
+                    </div>
+                    <div class="vacancy-btn">
+                        <button class="vancancy-skills">SQL</button>
+                        <button class="vancancy-skills">Gerenciamento de BD </button>
+                    </div>
+                    <div class="vacancy-btn">
+                        <button class="vancancy-skills">Otimização de BD</button>
+                        <button class="vancancy-skills">Gerenciamento de BD</button>
+                    </div>
+                    <a href="">
+                        <p class="vacancy-show">Visualizar vaga</p>
+                    </a>
+                </div>
+
+                <div class="vacancy-card">
+                    <h3>Desenvolvedor(a) Back-End Júnior</h3>
+                    <div class="vacancy-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="vacancy-salary">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <p>R$ 6.000,00(CLT)</p>
+                    </div>
+                    <div class="vacancy-btn">
+                        <button class="vancancy-skills">Java</button>
+                        <button class="vancancy-skills">APIs RESTful</button>
+                    </div>
+                    <div class="vacancy-btn">
+                        <button class="vancancy-skills">Spring Boot</button>
+                        <button class="vancancy-skills">Django</button>    
+                    </div>
+                    <a href="">
+                        <p class="vacancy-show">Visualizar vaga</p>
+                    </a>
+                    
+                </div>
+                
+            </div>  
+                
+
+        </section>
+
+        
+        
+        <section id="about-us-section">
+
+            <div class="about-us-container">
+
+                <div class="left-about-us">
+                    <h2>Sobre nós</h2>
+                    <hr>
+                    <p>A DevFinder, fundada em 2023, é uma plataforma que conecta desenvolvedores talentosos e empresas inovadoras em busca de sucesso no mercado de tecnologia. <br><br>Nossa missão é facilitar parcerias entre profissionais qualificados e companhias que buscam soluções e inovação. Com um time de especialistas apaixonados por tecnologia, trabalhamos para proporcionar uma experiência excepcional aos nossos usuários.<br><br>
+                        Oferecemos recursos avançados para que desenvolvedores possam criar perfis profissionais completos, destacando suas habilidades e experiências. Ao mesmo tempo, proporcionamos às empresas uma plataforma eficiente para publicar vagas e encontrar candidatos ideais. Junte-se à DevFinder e explore um mundo de oportunidades no universo da tecnologia.</p>
+                </div>
+    
+                <div class="right-about-us">
+                    <h2>Nosso Time</h2>
+                    <hr>
+    
+                        <div id="up-team">
+
+                            <div class="team-container">
+                                <img src="/images/joao-team.png" class="team-img">
+                                <h4>João Victor Ferreira</h4>
+                                <p>Front-end Engineer</p>
+                                <a href="https://www.linkedin.com/in/joão-victor-eth/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/joaovictor-ferreira" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
+
+                            </div>
+        
+                            <div class="team-container">
+                                <img src="/images/chris-team.png" class="team-img">
+                                <h4>Christiansen Taques</h4>
+                                <p>Back-end Engineer</p>
+                                <a href="https://www.linkedin.com/in/christiansen-taques-dias-594615235/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/RoninChris" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
+                            </div>
+
+                        </div>
+
+                        <div id="down-team">
+
+                            <div class="team-container">
+                                <img src="/images/eduardoteam.png" class="team-img">
+                                <h4>Eduardo Ceve</h4>
+                                <p>DBA</p>
+                                <a href="https://www.linkedin.com/in/eduardo-ceve-1130a7229" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/ducevee" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
+                            </div>
+        
+                            <div class="team-container">
+                                <img src="/images/junior-team.png" class="team-img">
+                                <h4>Josemir Rederd</h4>
+                                <p>Requirements Engineer</p>
+                                <a href="" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+                                <a href="https://github.com/ItsNotJuh" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-xl"></i> </a>
+                            </div>
+                    
+                    </div>
+                </div>    
+
+            </div>
+
+        </section>
+
+        <section id="contact-section" class="">
+
+            <h1>Entre em contato conosco</h1>
+            <div class="form-container">
+
+                <div class="left-form">
+                   <img src="/images/contact-us.svg" id="form-img">
+                </div>
+        
+                <div class="right-form">
+                    <h1 class="form-title"> Escreva a sua mensagem</h1>
+                    <!---->
+                    <form>
+        
+                        <label class="default-label" for="name-input">Nome</label>
+                        <div class="input-container">
+                            <i class="fa-sharp fa-solid fa-user"></i>
+                            <input type="text" name="form-reg" class="default-input" id="name-input" required placeholder="Nome"
+                                pattern="[a-zA-ZÀ-ú ]+" title="Por favor, insira um nome válido">
+                        </div>
+                        
+                        <label class="default-label" for="email-input">E-mail</label>
+                        <div class="input-container">
+                            <i class="fa-sharp fa-solid fa-envelope"></i>
+                            <input type="email" name="form-reg" class="default-input"id="email-input" required placeholder="Digite seu e-mail"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, insira um e-mail válido">
+                        </div>
+
+                        <label class="default-label" for="textarea">Mensagem</label>
+                        <div class="input-container">
+                            <textarea class="default-textarea" id="textarea">Digite aqui</textarea>
+                            <i class="fa-sharp fa-solid fa-message"></i>
+                        </div>
+                        <input type="submit" value="Enviar" class="default-btn">
+
+                    </form>
+
+        </section>
+
+        <footer id="footer">
+            <div class="footer-container">
+
+               <div class="footer-default-div">
+                <img src="/images/devfinderwhite.png" class="footer-img">
+               </div>
+               <hr> 
+
+                <h4>Redes Sociais</h4>
+                <div class="social-media-icons footer-default-div">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-github fa-xl"></i>
+                </div>
+
+                <hr> 
+                <div class="company-info"> 
+
+                    <h4>Contato</h4>
+                    <div class="company-contact">
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>devfinder@gmail.com</p>
+                        </div>
+                        
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Rua Imaculada da Conceição 1115. Curitiba, PR.</p>
+                            
+                        </div>
+
+                    </div>
+                  
+                </div>
+                
+                <hr>
+                <p> &copy; 2023| DevFinder - Todos os direitos reservados.</p>
+            </div>
+            
+        </footer>
+  
+    </main>    
+</body>
+</html>
