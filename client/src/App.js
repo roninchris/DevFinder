@@ -43,7 +43,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => { 
     if (!currentUser) { //Se Não tiver Usuario nenhum
-      return <Navigate to="/login" />; //Redireciona
+      return <Navigate to="/register" />; //Redireciona
     }
 
     return children;

@@ -49,3 +49,7 @@ app.use("/api/relationships", relationshipRoutes);
 app.listen(8800, () => {
   console.log("API working!");
 });
+
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
+});

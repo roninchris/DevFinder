@@ -13,6 +13,7 @@ const Update = ({ setOpenUpdate, user }) => {
     name: user.name,
     city: user.city,
     website: user.website,
+    job: user.job,
   });
 
   const upload = async (file) => {
@@ -115,32 +116,39 @@ const Update = ({ setOpenUpdate, user }) => {
             name="email"
             onChange={handleChange}
           />
-          <label>Password</label>
+          <label>Senha</label>
           <input
             type="text"
             value={texts.password}
             name="password"
             onChange={handleChange}
           />
-           <label>Name</label>
+           <label>Nome</label>
           <input
             type="text"
             value={texts.name}
             name="name"
             onChange={handleChange}
           />
-          <label>Country / City</label>
+          <label>País / Cidade</label>
           <input
             type="text"
             name="city"
             value={texts.city}
             onChange={handleChange}
           />
-          <label>Website</label>
+        <label>Experiências</label>
           <input
             type="text"
-            name="website"
-            value={texts.website}
+            name="experience"
+            value={texts.experience}
+            onChange={handleChange}
+          />
+          <label>Trabalho Atual</label>
+          <input
+            type="text"
+            name="job"
+            value={texts.job}
             onChange={handleChange}
           />
           <button onClick={handleClick}>Atualizar</button>
@@ -154,4 +162,3 @@ const Update = ({ setOpenUpdate, user }) => {
 };
 
 export default Update;
-
