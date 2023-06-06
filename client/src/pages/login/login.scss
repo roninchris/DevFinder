@@ -1,60 +1,63 @@
-.login {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
+ 
+:root{
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+  --dark-blue: #2d4059;
+  --vibrant-red: #ea5455;
+  --burnt-orange: #f07b3f;
+  --light-yellow: #ffd460;
+  --white: #ffffff;       
+}
+.container{
+  background-color: var(--dark-blue);
   height: 100vh;
-  background-color: rgb(193, 190, 255);
   display: flex;
   align-items: center;
-  justify-content: center;
 
-  .card {
-    width: 50%;
+    .content {
     display: flex;
-    background-color: white;
-    border-radius: 10px;
-    min-height: 600px;
-    overflow: hidden;
-
-    .left {
-      flex: 1;
-      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
-        url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600")
-          center;
-      background-size: cover;
-      padding: 50px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      color: white;
-
-      h1 {
-        font-size: 100px;
-        line-height: 100px;
-      }
-      
-      p {
-      }
-
-      span {
-        font-size: 14px;
-      }
-      
-      button {
-        width: 50%;
-        padding: 10px;
-        border: none;
-        background-color: white;
-        color: rebeccapurple;
-        font-weight: bold;
-        cursor: pointer;
-      }
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 0 50px;
+    margin: 0 auto;
+    @media (max-width: 64rem) {
+      width: 100%;
     }
 
-    .right {
-      flex: 1;
-      padding: 50px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 64rem) {
+          display: none;
+        }
+        h1 {
+          color: var(--burnt-orange);
+          text-align: center;
+          font-size: 2.5rem;
+          @media (max-width: 36rem) {
+            font-size: 1.7rem;
+            
+          }
+        }
+      }
+
+      .form {
+      min-width: 23rem;
+      width: 28rem;
+      background: var(--white);
+      border: none;
+      border-radius: 1.25rem;
+      padding: 80px 50px;
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 40px;
       justify-content: center;
+      @media (max-width: 64rem) {
+        min-width: 100%;
+        width: 100%;
+      }
 
       h1 {
       color: #555;
@@ -72,13 +75,29 @@
         }
         
         button {
-          width: 50%;
+          width: 33%;
           padding: 10px;
           border: none;
-          background-color: #938eef;
+          border-radius: 1.25rem;
+          background-color: var(--burnt-orange);
           color: white;
           font-weight: bold;
+          transition: all .2s ease-out;
           cursor: pointer;
+          &:hover {
+            transform: scale(1.04);
+          }
+        }
+      }
+      .redirect {
+        display: flex;
+        gap:0 5px;
+        p {
+          color: #555;
+          text-decoration: none;
+          &:hover {
+            color: var(--burnt-orange)
+          }
         }
       }
     }
