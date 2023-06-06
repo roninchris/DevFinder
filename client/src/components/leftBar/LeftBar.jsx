@@ -65,6 +65,16 @@ const LeftBar = () => {
             <img src={Courses} alt="" />
             <span>Cursos</span>
           </div>
+          <div>
+            <h2>REGRAS DA COMUNIDADE</h2>
+            <br></br>
+            <li>Coloque sempre a tag [Vaga/Projeto] e seu Valor (caso seja remunerado)</li>
+            <br></br>
+            <li>Para posts OffTopic não é necessário tageamento</li>
+            <br></br>
+            <h4>Caso ocorram descumprimento das regras</h4>
+            <h4>o post será removido.</h4>
+          </div>
         </div>
       </div>
     </div>

@@ -17,6 +17,9 @@ const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
   const { currentUser, logout } = useContext(AuthContext);
 
+  const currentUserId = currentUser.id;
+  const profileUrl = "/profile/" + currentUserId;
+  console.log(currentUserId);
   const handleLogout = () => {
     logout();
   };
@@ -40,7 +43,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="right">
-        <PersonOutlinedIcon />
+        
+      <Link to={profileUrl} ><PersonOutlinedIcon /> </Link>
         <EmailOutlinedIcon />
         <NotificationsOutlinedIcon />
         <div className="user">

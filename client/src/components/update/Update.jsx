@@ -137,11 +137,11 @@ const Update = ({ setOpenUpdate, user }) => {
             value={texts.city}
             onChange={handleChange}
           />
-        <label>Experiências</label>
+        <label>Website</label>
           <input
             type="text"
-            name="experience"
-            value={texts.experience}
+            name="website"
+            value={texts.website}
             onChange={handleChange}
           />
           <label>Trabalho Atual</label>
