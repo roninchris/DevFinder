@@ -69,7 +69,7 @@ const Register = () => {
               <button onClick={handleClick}>Registre-se</button>
             </form>
             <div className="redirect">
-              <span>Já possui uma conta?</span>
+              <span>Já tem uma conta?</span>
               <Link to="/login">
                 <p>Login</p>
               </Link>
