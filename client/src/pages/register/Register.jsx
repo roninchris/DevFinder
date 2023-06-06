@@ -66,7 +66,7 @@ const Register = () => {
                 onChange={handleChange}
               />
               {err && err}
-              <button onClick={handleClick}>Registre-se</button>
+              <button onClick={handleClick}><Link to="/login" >Registre-se</Link></button>
             </form>
             <div className="redirect">
               <span>Já tem uma conta?</span>
