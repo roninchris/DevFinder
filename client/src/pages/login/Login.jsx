@@ -54,7 +54,7 @@ const Login = () => {
               <button onClick={handleLogin}>Login</button>
             </form>
             <div className="redirect">
-              <span>Ainda não tem uma conta DevFinder?</span>
+              <span>Não possui uma conta?</span>
               <Link to="/register">
                 <p>Registre-se</p>
               </Link>
