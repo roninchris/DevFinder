@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-form">
       <div className="content">
           <div className="left">
             <h1>Como é bom ter você <br /> de volta!</h1>

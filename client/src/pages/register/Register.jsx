@@ -31,7 +31,7 @@ const Register = () => {
   console.log(err)
 
   return (
-    <div className="container">
+    <div className="container-form">
       <div className="content">
           <div className="left">
             <h1>Entre para a nossa <br /> comunidade</h1>
