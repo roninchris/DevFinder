@@ -3,6 +3,7 @@ import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import CasesOutlinedIcon from '@mui/icons-material/CasesOutlined';
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PlaceIcon from "@mui/icons-material/Place";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -96,6 +97,10 @@ const Profile = () => {
                   <div className="item">
                     <LanguageIcon />
                     <span>{data.website}</span>
+                  </div>
+                  <div className="item">
+                    <CasesOutlinedIcon/>
+                    <span>{data.job}</span>
                   </div>
                 </div>
                 {rIsLoading ? (

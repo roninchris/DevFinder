@@ -57,8 +57,9 @@ const Share = () => {
               placeholder={`Print HelloWorld, ${currentUser.name}?`}
               onChange={(e) => setDesc(e.target.value)}
               value={desc}
-            />
+            /> 
           </div>
+          
           <div className="right">
             {file && (
               <img className="file" alt="" src={URL.createObjectURL(file)} />
@@ -80,10 +81,6 @@ const Share = () => {
                 <span>Adicionar imagens</span>
               </div>
             </label>
-            <div className="item">
-              <img src={Map} alt="" />
-              <span>Adicionar lugares</span>
-            </div>
             <div className="item">
               <img src={Friend} alt="" />
               <span>Marcar colaboradores</span>

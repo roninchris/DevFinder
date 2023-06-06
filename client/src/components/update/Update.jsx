@@ -13,6 +13,7 @@ const Update = ({ setOpenUpdate, user }) => {
     name: user.name,
     city: user.city,
     website: user.website,
+    job: user.job,
   });
 
   const upload = async (file) => {
