@@ -13,13 +13,32 @@ const Register = () => {
     name: "",
   });
   const [err, setErr] = useState(null);
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9a-zA-Z]).{8,}$/;
+
 
   const handleChange = (e) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
+  }
 
   const handleClick = async (e) => {
     e.preventDefault();
+    const { name, value } = e.target;
+    
+    if (name === 'email') {
+      const isValidEmail = emailRegex.test(value);
+        if(isValidEmail){
+          alert('Email Inválido')
+          return;
+        }
+    };
+    if (name === 'password') {
+      const isValidPassword = passwordRegex.test(value);
+        if(isValidPassword) {
+          alert('Senha inválida: A senha deve conter ao menos 8 carateres. Sendo ao menos uma letra maiuscula especial(!@#$%ˆ&)')
+          return;
+        }
+    }
 
     try {
       await axios.post("http://localhost:8800/api/auth/register", inputs);
