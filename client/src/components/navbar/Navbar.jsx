@@ -43,8 +43,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className="right">
-        
-      <Link to={profileUrl} ><PersonOutlinedIcon /> </Link>
+        <Link to={profileUrl}>
+          {currentUser.id === currentUserId ? (
+            <PersonOutlinedIcon />
+          ) : (
+            <span>{currentUser.name}</span>
+          )}
+        </Link>
         <EmailOutlinedIcon />
         <NotificationsOutlinedIcon />
         <div className="user">

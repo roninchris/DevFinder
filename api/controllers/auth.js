@@ -3,18 +3,22 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 export const register = (req, res) => {
-  //Checa se o usuario existe
+  // Verifica se todos os campos estão preenchidos
+  if (!req.body.username || !req.body.email || !req.body.password || !req.body.name) {
+    return res.status(400).json("Por favor, preencha todos os campos.");
+  }
 
-  const q = "SELECT * FROM users WHERE username = ?"; //mais seguro
+  // Checa se o usuário existe
+  const q = "SELECT * FROM users WHERE username = ?";
 
-  db.query(q, [req.body.username], (err, data) => { 
-    if (err) return res.status(500).json(err); //se tiver error
+  db.query(q, [req.body.username], (err, data) => {
+    if (err) return res.status(500).json(err);
     if (data.length) return res.status(409).json("Usuário já existe!");
-    //Cria um novo usuario
-    
+
+    // Cria um novo usuário
     const salt = bcrypt.genSaltSync(10);
     const hashedPassword = bcrypt.hashSync(req.body.password, salt);
-//Execute o hash da senha = "1234" -> "kajsdhjkas"
+
     const q =
       "INSERT INTO users (`username`,`email`,`password`,`name`) VALUE (?)";
 
@@ -37,7 +41,7 @@ export const login = (req, res) => {
 
   db.query(q, [req.body.username], (err, data) => {
     if (err) return res.status(500).json(err);
-    if (data.length === 0) return res.status(404).json("User not found!");
+    if (data.length === 0) return res.status(404).json("Usuário não encontrado!");
 
     const checkPassword = bcrypt.compareSync(
       req.body.password,
@@ -45,7 +49,7 @@ export const login = (req, res) => {
     );
 
     if (!checkPassword)
-      return res.status(400).json("Wrong password or username!");
+      return res.status(400).json("Senha ou nome de usuário incorretos!");
 
     const token = jwt.sign({ id: data[0].id }, "secretkey");
 
@@ -61,8 +65,8 @@ export const login = (req, res) => {
 };
 
 export const logout = (req, res) => {
-  res.clearCookie("accessToken",{
-    secure:true,
-    sameSite:"none"
-  }).status(200).json("User has been logged out.")
+  res.clearCookie("accessToken", {
+    secure: true,
+    sameSite: "none"
+  }).status(200).json("Usuário fez logout.");
 };

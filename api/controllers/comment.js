@@ -15,10 +15,10 @@ export const getComments = (req, res) => {
 
 export const addComment = (req, res) => {
   const token = req.cookies.accessToken;
-  if (!token) return res.status(401).json("Not logged in!");
+  if (!token) return res.status(401).json("Nao esta logado!");
 
   jwt.verify(token, "secretkey", (err, userInfo) => {
-    if (err) return res.status(403).json("Token is not valid!");
+    if (err) return res.status(403).json("Token invalido!");
 
     const q = "INSERT INTO comments(`desc`, `createdAt`, `userId`, `postId`) VALUES (?)";
     const values = [
@@ -40,15 +40,15 @@ export const deleteComment = (req, res) => {
   if (!token) return res.status(401).json("Not authenticated!");
 
   jwt.verify(token, "secretkey", (err, userInfo) => {
-    if (err) return res.status(403).json("Token is not valid!");
+    if (err) return res.status(403).json("Token invalido!");
 
     const commentId = req.params.id;
     const q = "DELETE FROM comments WHERE `id` = ? AND `userId` = ?";
 
     db.query(q, [commentId, userInfo.id], (err, data) => {
       if (err) return res.status(500).json(err);
-      if (data.affectedRows > 0) return res.json("Comment has been deleted!");
-      return res.status(403).json("You can delete only your comment!");
+      if (data.affectedRows > 0) return res.json("Comentario foi deletado!");
+      return res.status(403).json("So pode deletar o proprio comentario!");
     });
   });
 };
