@@ -15,6 +15,19 @@ The site also features a **feedback system**, allowing companies to rate develop
 
 ---
 
+## 📸 Screenshots
+
+<img width="2541" height="1374" alt="image" src="https://github.com/user-attachments/assets/b56ccf4d-ed66-4c09-8cc5-60bdcd49d436" />
+<img width="2533" height="1078" alt="image" src="https://github.com/user-attachments/assets/abe02c70-9030-43a7-aca1-0b698445e02f" />
+<img width="2533" height="1173" alt="image" src="https://github.com/user-attachments/assets/48c580d5-cb5e-4a5e-a24c-852b761b268d" />
+<div align="center">
+<img width="546" height="1076" alt="image" src="https://github.com/user-attachments/assets/50032eed-0c4a-4514-9ebc-31746a1b1d42" />
+<img width="537" height="1083" alt="image" src="https://github.com/user-attachments/assets/7d500026-2caa-418d-ba24-0be153c96419" />
+</div>
+<img width="1935" height="1168" alt="image" src="https://github.com/user-attachments/assets/e1796eca-13aa-4d9d-a16d-eabbb5b2c9ab" />
+
+
+
 ## ✨ Features
 
 - 🔍 **GitHub User Search**: Easily search for GitHub users by their usernames.
@@ -23,6 +36,7 @@ The site also features a **feedback system**, allowing companies to rate develop
 - 📱 **Responsive Design**: Optimized for any screen size.
 - ⭐ **Feedback System**: Rate and review developers after project completion.
 - 🧩 **User-Friendly Interface**: Clean and intuitive navigation.
+
 
 ---
 
@@ -99,52 +113,9 @@ The site also features a **feedback system**, allowing companies to rate develop
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository.
-2. Create a new branch:
-
-   ```bash
-   git checkout -b feature-name
-   ```
-
-3. Make your changes.
-4. Commit your changes:
-
-   ```bash
-   git commit -am "Add new feature"
-   ```
-
-5. Push to the branch:
-
-   ```bash
-   git push origin feature-name
-   ```
-
-6. Open a Pull Request.
-
----
-
 ## 📄 License
 
 This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
-## 🙏 Acknowledgements
-
-- GitHub API for providing developer data.
-- Frontend Mentor for the inspiration and challenge.
-
----
-
-## 📸 Screenshots
-
-### DevFinder Interface
-![DevFinder Interface](https://github.com/roninchris/DevFinder/raw/main/images/devfinder-interface.png)
-
-### GitHub User Profile Display
-![GitHub User Profile](https://github.com/roninchris/DevFinder/raw/main/images/github-user-profile.png)
-
-### Theme Toggle Feature
-![Theme Toggle](https://github.com/roninchris/DevFinder/raw/main/images/theme-toggle.png)
